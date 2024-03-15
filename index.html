@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM - Felix Söderström</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="newsBanner" class="hidden">
+        <h1 id="breakingNews">BREAKING NEWS</h1>
+        <p id="newsText1">Local ATM prints money, world economy collapses - Experts are blaming the ATM</p>
+        <h1 id="breakingNews">BREAKING NEWS</h1>
+        <p id="newsText2">Tesla stocks are up 2% - Elon Musk statement on Joe Rogan podcast: "It's all a simulation"</p>
+        <h1 id="breakingNews">BREAKING NEWS</h1>
+        <p id="newsText3">Bitcoin holders are acting super smug worldwide. "Where is your bugatti?" asks Andrew Tate in recent interview with CBT news.</p>
+        <h1 id="breakingNews">BREAKING NEWS</h1>
+    </div>
+    <main>
+        <div id="overlay"></div>
+        <div class="upper-part">
+            <div class="left-buttons">
+                <button id="choiceButton1" class="screen-button">Log In</button>
+                <button id="choiceButton5" class="screen-button">Log Out</button>
+                <button id="choiceButton3" class="screen-button">New Account</button>
+            </div>
+
+            <div class="entire-screen">
+                <div id="screenOverlay" class="hidden">
+                    <h3 id="screenTextOverlay"></h3>
+                </div>
+                    
+                    
+                    <div class="upper-buttons-text">
+                        <h2 id="choiceText1"></h2>
+                        <p class="charityFund"></p>
+                        <h2 id="choiceText2"></h2>
+                    </div>
+
+                    <div class="middle-screen">
+                        <h3 id="screen-text" class="screen-text"></h3>
+                        <h4 id="input-field" class="screen-text"></h4>
+                    </div>
+
+                    <div class="lower-buttons-text">
+                        <h2 id="choiceText3"></h2>
+                        <p id="currentUserName"></p>
+                        <h2 id="choiceText4"></h2>
+                    </div>
+            </div>
+            <div class="right-buttons">
+                <button id="choiceButton2" class="screen-button">Withdraw</button>
+                <button id="choiceButton6" class="screen-button">Deposit</button>
+                <button id="choiceButton4" class="screen-button">Balance</button>
+            </div>
+        </div>
+        
+        <div class="more-tags">
+            <img src="images/grafitti3.png" alt="gfrafititit" class="tag3">
+            <img src="images/grafitti4.png" alt="grofotutu" class="tag4">
+        </div>
+        </div>
+        <div class="middle-part">
+            <div class="cash-out">
+                <div class="cash-out-handle"></div>
+                <img src="images/cash.png" id="cash" class="hidden">
+                <div id="cash-out-background" class="hidden"></div>
+            </div>
+            <div class="card-in">
+                <div class="card-slot"></div>
+            </div>
+        </div>
+        <div class="lower-part">
+            <img src="images/grafitti1.png" alt="grafitti" class="tag1">
+            <div class="buttons">
+                <div class="button-row-1">
+                    <button class="button" id="1">1</button>
+                    <button class="button" id="2">2</button>
+                    <button class="button" id="3">3</button>
+                    <button class="big-button" id="cancel">Cancel</button>
+                </div>
+                <div class="button-row-2">
+                    <button class="button" id="4">4</button>
+                    <button class="button" id="5">5</button>
+                    <button class="button" id="6">6</button>
+                    <button class="big-button" id="clear">Clear</button>
+                </div>
+                <div class="button-row-3">
+                    <button class="button" id="7">7</button>
+                    <button class="button" id="8">8</button>
+                    <button class="button" id="9">9</button>
+
+                </div>
+                <div class="button-row-4">
+                    <button class="button" id="-">-</button>
+                    <button class="button" id="0">0</button>
+                    <button class="button" id="+">+</button>
+                    <button class="big-button" id="enter">Enter</button>
+                </div>
+            </div>
+            <img src="images/grafitti2.png" alt="grafitti" class="tag2">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
