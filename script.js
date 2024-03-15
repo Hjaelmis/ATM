@@ -636,7 +636,7 @@ function handleEnterClickLogin () {
 }
 
 function checkIfPinIsFourDigits(currentUser) {
-    //pin = inputField.textContent;
+    pin = inputField.textContent;
     if (input.length === 4) {
         checkIfPinMatches(currentUser, input);
         inputField.textContent = '';
@@ -677,7 +677,7 @@ function loginSuccess (currentUser) {
 }
 
 function loginFail(currentUser) {
-    inputField.textContent = '';
+    clearInputField();
     loginAttempts--;
     if (loginAttempts === 0) {
         let text = "Thank you for your donation of " + currentUser.balance + ", "+currentUser.name+". Have a nice day."
